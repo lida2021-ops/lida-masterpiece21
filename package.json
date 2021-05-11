@@ -1,0 +1,34 @@
+{
+  "name": "lida-masterpiece21",
+  "version": "0.0.1",
+  "description": "This is Lida's Masterpiece application! Welcome!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lida2021-ops/lida-masterpiece21.git"
+  },
+  "keywords": [
+    "CSE 110",
+    "Learning Process"
+  ],
+  "author": "Lida Asilyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lida2021-ops/lida-masterpiece21/issues"
+  },
+  "homepage": "https://github.com/lida2021-ops/lida-masterpiece21#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "google-auth-library": "^7.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
