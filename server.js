@@ -11,6 +11,11 @@ const client = new OAuth2Client(CLIENT_ID);
 
 
 const PORT = 5001;
+const CLIENT_ID = '333642631602-h2l1m29lfb5c1d0dta76nvv4so4bjeo4.apps.googleusercontent.com'
+const client = new OAuth2Client(CLIENT_ID);
+
+
+const PORT = 7000;
 
 // Middleware
 
@@ -21,6 +26,7 @@ app.use(express.static('public'));
 
 app.get('/', (req, res)=>{
     res.render('index');
+    res.render('index')
 })
 
 app.get('/login', (req,res)=>{
@@ -104,4 +110,7 @@ function checkAuthenticated(req, res, next){
 
 app.listen(PORT, () => {
     console.log(`Server Started ${PORT}`);
+})
+app.listen(PORT, ()=>{
+    console.log(`Server running on port ${PORT}`);
 })
