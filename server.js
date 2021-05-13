@@ -27,17 +27,6 @@ app.get('/login', (req,res)=>{
     res.render('login');
 })
 
-app.get('/survey_books', (req,res)=>{
-    res.render('survey_books');
-})
-
-app.get('/admin', (req,res)=>{
-    res.render('admin');
-})
-
-app.get('/survey_hobby', (req,res)=>{
-    res.render('survey_hobby');
-})
 
 app.post('/login', (req,res)=>{
     let token = req.body.token;
@@ -75,6 +64,7 @@ app.get('/logout', (req, res)=>{
 })
 
 
+
 function checkAuthenticated(req, res, next){
 
     let token = req.cookies['session-token'];
@@ -96,7 +86,7 @@ function checkAuthenticated(req, res, next){
           next();
       })
       .catch(err=>{
-          res.redirect('/login')
+          res.redirect('/dashboard')
       })
 
 }

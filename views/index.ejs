@@ -2,7 +2,6 @@
 <html>
   <head>
    <title>Lida's Homepage</title>
-   <link rel="stylesheet" type="text/css" href="https://cse120-2021-api-lida.herokuapp.com//dashboard.css"/>
    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
    <script
 			src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -68,22 +67,37 @@
 
 </style>
   </head>
+  
   <body>
 
     <header>
     <h2> Lida's Portfolio </h2>
     </header>
-    
+
+    <a href ="#" onclick="signOut()";> Sign Out </a>
+
+
     <div class ="form.div">
       <h3>View my forms:</h3>
-      <text><a href="/survey_books">My Book</a> (The first project is a survey about favorite books)</text><br>
-      <text><a href="/survey_hobby">My Hobby</a> (The second project is about my hobby - fitness)</text><br><br>
+      <text><a href="https://cse120-2021-api-lida.herokuapp.com/books/index.html">My Book</a> (The first project is a survey about favorite books)</text><br>
+      <text><a href="https://cse120-2021-api-lida.herokuapp.com/hobby/index.html">My Hobby</a> (The second project is about my hobby - fitness)</text><br><br>
     </div>
     <div class ="form.div">
       <h3>View the admin page:</h3>
-      <text><a href="/admin">Submissions</a> (All of the form submissions can be found here.)</text><br><br>
+      <text><a href="https://cse120-2021-api-lida.herokuapp.com/admin/index.html">Submissions</a> (All of the form submissions can be found here.)</text><br><br>
 
     </div>
     <script src="https://cse120-2021-api-lida.herokuapp.com/admin/script.js"></script>
+
+    <script>
+
+       function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+        location.assign('/login');
+        });
+    }
+    </script>
   </body>
 </html> 
