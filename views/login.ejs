@@ -35,52 +35,29 @@
 
         }
 
+         #g-signin2_index {
 
-      div {
-
-        background-color: rgba(173, 233, 233, 0.534);
-        border-radius: 20px;
-        border: 3px solid rgb(11, 11, 94);
-        padding:30px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        margin-left: 20px;
-        text-align: inherit;
-        color: rgb(72, 25, 133);
-        text-shadow: 2px 2px rgb(196, 233, 255);
-        font-size: large; 
-        
-
-      } 
-
-
-      h2 {
-
-          font-family: cursive;
-          background-color: darkblue;
-          color: lightblue;
-          text-align: center;
-          font-size: xx-large;
-        }
-
-        h3 {
-
-          font-family: fantasy;
-          background-color: azure;
+          font-size: 20px;  
+          border: none;
+          font-family: "Sofia", sans-serif;
+          border-radius: 10px 10px;
+          padding: 15px;
           color: darkblue;
-          text-align: center;
-          font-size: xx-large;
+          background-color: rgb(65, 184, 214);
         }
 
-        #g-signin2_index {
 
-          visibility: hidden;
-        }
 
 </style>
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-   <a href ="#" onclick="signOut()";> Sign Out </a>
+   <a href ="#" onclick="signOut()"; style="font-size: 20px;  
+          border: none;
+          font-family: sans-serif;
+          border-radius: 10px 10px;
+          padding: 15px;
+          color: darkblue;
+          background-color: rgb(65, 184, 214);"> Sign Out </a>
     <script>
 
         function onSignIn(googleUser) {
