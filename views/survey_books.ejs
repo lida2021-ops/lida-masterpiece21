@@ -12,10 +12,11 @@
 <body>
 
   <style>
-    body {
+    
+   body {
  background-color:bisque;
+ background-image: url("https://i.guim.co.uk/img/media/d305370075686a053b46f5c0e6384e32b3c00f97/0_50_5231_3138/master/5231.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=878208abf6d919b7ca9948a523d9ff4e");
  text-align: center;
- text-shadow: 2px 2px bisque;
  font-size: 18px;
  padding: 30px;
  font-family: "Sofia", sans-serif;
@@ -27,17 +28,40 @@ color: rgb(136, 15, 136);
 
 }
 
+
 div.form-div {
-  border:2px solid purple; 
-  background-color: pink;
-  border-radius: 30px;
+
+  background-color: rgba(243, 135, 180, 0.623);
+  border-radius: 20px;
+  border: 3px solid rgba(155, 22, 148, 0.795);
   padding:30px;
-  margin-bottom: 30px;
+  font-family: "Sofia", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: inherit;
+  color: rgba(155, 22, 148, 0.795);
+  text-shadow: 2px 2px rgba(240, 123, 172, 0.589);
+  font-size: large; 
+  
+
+} 
+
+
+input[type=text], [type=color], [type=text], input[type=date] {
+
+
+  width: 40vw;
+  color: rgba(155, 22, 148, 0.795);
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
+  background: rgba(243, 135, 180, 0.623);
+  margin-top: 40px; 
   font-family: "Sofia", sans-serif;
 
 
-
-} 
+      }
 
 #funny_girl {
   height:100px;
@@ -55,21 +79,7 @@ div.form-div {
 
 
 
-input[type=number], [type=color], [type=text] {
-  width: 70vw;
-  box-shadow: 2px 2px palevioletred;
-  background-color: rgba(240, 250, 102, 0.589);
-  margin-bottom: 20px;
-  border-radius: 40px;
-  padding: 24px;
-  box-sizing: border-box;
-  border: 2px solid purple;
-  border-bottom: 1px black;
-  padding-bottom: 50px;
-}
-
-
-input[type=button], input[type=date] {
+input[type=button] {
   width: 70vw;
   box-shadow: 2px 2px palevioletred;
   background-color: rgba(240, 250, 102, 0.589);
@@ -86,17 +96,15 @@ input[type=button], input[type=date] {
   
 
 select {
-  width: 70vw;
-  box-shadow: 2px 2px palevioletred;
-  background-color: rgba(240, 250, 102, 0.589);
-  margin-bottom: 20px;
-  border-radius: 50px;
-  padding: 24px;
-  box-sizing: border-box;
-  border: 2px solid purple;
-  border-bottom: 1px black;
-  padding-bottom: 50px;
+  width: 40vw;
+  color: rgba(155, 22, 148, 0.795);
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
+  background: rgba(243, 135, 180, 0.438);
+  margin-top: 40px; 
   font-family: "Sofia", sans-serif;
+
       }
 
 
@@ -106,6 +114,7 @@ h1 {
  background-color: purple; text-align: center; color: azure; font-family: "Sofia", sans-serif;  transform: rotate3d(180deg);
 
     }
+
   </style>
   
   <h1> Favorite books <img id="books"></h1> 
@@ -186,7 +195,7 @@ h1 {
      <button id = "mainbutton" onclick="showTheBookData(event)" style ="font-size: 20px;
     border: none; border-radius: 10px 10px; padding: 15px; color: #6600cc;
     background-color: #ffb6c1;"> SUBMIT </button>
-    <text><a href ="http://cse120-2021-api-lida.herokuapp.com/index.html" style="font-size: 20px;
+    <text><a href ="/" style="font-size: 20px;
     border: none; border-radius: 10px 10px; padding: 15px; color: #ffb6c1;
     background-color: #6600cc; text-decoration: none;"> Return </a></text></text>
         
