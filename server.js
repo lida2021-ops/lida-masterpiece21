@@ -94,6 +94,10 @@ app.get('/logout', (req, res)=>{
 
 })
 
+app.get('/dashboard', checkAuthenticated, (req, res)=>{
+    let user = req.user;
+    res.render('dashboard', {user});
+})
 
 
 function checkAuthenticated(req, res, next){
