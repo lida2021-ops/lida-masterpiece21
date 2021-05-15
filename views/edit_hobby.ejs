@@ -263,6 +263,7 @@ function updateHobbyData(e) {
       dataType : 'json',
       success: function (data) {
         console.log("success");
+        document.location="/thankyou";
       },
       error: function (xhr) {
         console.error("Error in post", xhr);
