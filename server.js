@@ -53,6 +53,17 @@ app.get('/profile', checkAuthenticated, (req, res)=>{
     res.render('profile', {user});
 })
 
+
+app.get('/survey_books', checkAuthenticated, (req, res)=>{
+    let user = req.user;
+    res.render('survey_books', {user});
+})
+
+app.get('/survey_fitness', checkAuthenticated, (req, res)=>{
+    let user = req.user;
+    res.render('survey_fitness', {user});
+})
+
 app.get('/protectedRoute', checkAuthenticated, (req,res)=>{
     res.send('This route is protected')
 })
