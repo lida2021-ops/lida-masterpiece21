@@ -50,7 +50,7 @@ h1 {
 </style>
 
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-   <a href ="#" onclick="signOut()" style = "color: black;"> Sign Out </a>
+   <a href ="https://www.youtube.com/watch?v=gdZLi9oWNZg" onclick="signOut()" style = "color: black;"> Sign Out </a>
     <script>
 
         function onSignIn(googleUser) {
@@ -74,7 +74,7 @@ h1 {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
         console.log('User signed out.');
-        window.location.href("https://www.youtube.com/watch?v=gdZLi9oWNZg");
+        
         });
     }
     
