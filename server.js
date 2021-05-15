@@ -74,6 +74,16 @@ app.get('/thankyou', checkAuthenticated, (req, res)=>{
     res.render('thankyou', {user});
 })
 
+app.get('/edit_fitness', checkAuthenticated, (req, res)=>{
+    let user = req.user;
+    res.render('edit_fitness', {user});
+})
+
+app.get('/edit_books', checkAuthenticated, (req, res)=>{
+    let user = req.user;
+    res.render('edit_books', {user});
+})
+
 app.get('/protectedRoute', checkAuthenticated, (req,res)=>{
     res.send('This route is protected')
 })

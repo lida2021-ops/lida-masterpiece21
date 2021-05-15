@@ -260,9 +260,9 @@ loadedData.forEach(item => {
         localStorage = window.localStorage;
         localStorage.setItem('editItem', JSON.stringify(item));
         if (item["project"] == "Fitness") {
-          document.location  = "edit_hobby.html"; 
+          document.location  = "edit_fitness.ejs"; 
         } else {
-          document.location  = "edit_book.html"; 
+          document.location  = "edit_books.ejs"; 
         }
     }
   })
