@@ -74,14 +74,14 @@ app.get('/thankyou', checkAuthenticated, (req, res)=>{
     res.render('thankyou', {user});
 })
 
-app.get('/edit_fitness', checkAuthenticated, (req, res)=>{
+app.get('/edit_hobby', checkAuthenticated, (req, res)=>{
     let user = req.user;
-    res.render('edit_fitness', {user});
+    res.render('edit_hobby', {user});
 })
 
-app.get('/edit_books', checkAuthenticated, (req, res)=>{
+app.get('/edit_book', checkAuthenticated, (req, res)=>{
     let user = req.user;
-    res.render('edit_books', {user});
+    res.render('edit_book', {user});
 })
 
 app.get('/protectedRoute', checkAuthenticated, (req,res)=>{
